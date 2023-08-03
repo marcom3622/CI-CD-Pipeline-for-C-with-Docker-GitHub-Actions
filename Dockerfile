@@ -5,7 +5,7 @@ FROM gcc:latest
 WORKDIR /app
 
 # Copy the Makefile and the source code files to the working directory
-COPY Makefile hello_world.cpp ./
+COPY makefile hello_world.cpp ./
 
 # Build the C++ application using the provided Makefile
 RUN make hello_world
