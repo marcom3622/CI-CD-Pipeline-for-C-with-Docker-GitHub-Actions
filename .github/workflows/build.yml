@@ -18,8 +18,8 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker buildx build --file Dockerfile --tag myapp:1.0.0 .
+          docker buildx build --file Dockerfile --tag marcom3622/myapp:1.0.0 .
 
       - name: Run C++ application
         run: |
-          docker run myapp:1.0.0
+          docker run marcom3622/myapp:1.0.0
